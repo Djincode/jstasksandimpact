@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluprint</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="/index.html">
+            <img src="./assets/images/Logo.png" alt="logo" />
+          </a>
+        </div>
+        <!-- Navigation -->
+        <nav>
+          <ul class="menu__list">
+            <li>
+              <a href="#">
+                Products
+                <span>.</span>
+              </a>
+            </li>
+            <li>
+              <a href="/collections"> Collections<span>.</span> </a>
+            </li>
+            <li>
+              <a href="/account"> Accounts<span>.</span> </a>
+            </li>
+            <li>
+              <a href="/help"> Help<span>.</span> </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Add to Cart and Search -->
+        <div class="header__btns">
+          <a href="./cartPage/index.html">
+            <img src="./assets/icons/cart.svg" alt="cart" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons/search.svg" alt="search" />
+          </a>
+        </div>
+      </header>
+      <!-- Main -->
+      <main class="main">
+        <!-- Filters -->
+        <div class="filters">
+          <!-- Categories -->
+          <div class="categories">
+            <button class="filterBtn">
+              <span>Category</span>
+              <div class="chevronIcon">
+                <img src="./assets/icons/chevron.svg" alt="chevron icon" />
+              </div>
+            </button>
+            <ul class="filterList hidden">
+              <li>Caps</li>
+              <li>Hoodies</li>
+              <li>T-shirts</li>
+              <li>Jeans</li>
+            </ul>
+          </div>
+          <!-- Colors -->
+          <div class="colors">
+            <button class="filterBtn">
+              <span>Color</span>
+              <div class="chevronIcon">
+                <img src="./assets/icons/chevron.svg" alt="" />
+              </div>
+            </button>
+            <ul class="filterList hidden">
+              <li>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+              </li>
+            </ul>
+          </div>
+          <!-- Sizes -->
+          <div class="sizes">
+            <button class="filterBtn">
+              <span>Size</span>
+              <div class="chevronIcon">
+                <img src="./assets/icons/chevron.svg" alt="" />
+              </div>
+            </button>
+            <ul class="filterList hidden">
+              <li>
+                <button>xs</button>
+              </li>
+              <li>
+                <button>s</button>
+              </li>
+              <li>
+                <button>m</button>
+              </li>
+              <li>
+                <button>l</button>
+              </li>
+              <li>
+                <button>xl</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Products -->
+        <div class="products__container">
+          <p class="font-medium mb-4 products__title">Showing 10 results</p>
+
+          <div class="products">
+            <!-- Product Item -->
+            <!-- <div class="product__item">
+              <a href="#">
+                <div class="product__image">
+                  <img src="./assets/images/t-shirt.png" alt="" />
+                </div>
+                <div class="product__info">
+                  <div class="product__description">
+                    <h1>T-shirt</h1>
+                    <p>t-shirt</p>
+                  </div>
+                  <h1 class="product__price">24.99 AZN</h1>
+                </div>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -613,11 +613,140 @@ section {
   color: #fff;
 }
 
+.cont-header {
+  width: 100%;
+  text-align: center;
+
+}
+
+.cont-header h2{
+  position: relative;
+  font-size: 30px;
+}
+
+.cont-header h2::after{
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: green;
+  display: block;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  margin: 20px 0;
+}
+
+.cont-header p{
+  margin: 50px 0;
+  color: #6f6f6f;
+}
+
+.links{
+  display: flex;
+  gap: 30px;
+
+}
+
+.links a {
+  color: #6f6f6f;
+}
+
+
+
+.active{
+  color: green !important;
+}
+
+.links a:hover{
+  color: green;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.link-container{
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 31%;
+  height: 400px;
+  overflow: hidden;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+
+.card img{
+  width: 100%;
+
+}
+
+.card h2{
+  padding: 20px;
+}
+
+.card p{
+  padding: 0 20px;
+}
+
+.accordion {
+  width: 800px;
+
+}
+
+.accordion .contentbox {
+  position: relative;
+  margin: 20px;
+}
+.label {
+  padding: 10px;
+  /* background-color: rgb(29, 127, 127); */
+  color: black;
+  position: relative;
+}
+
+.label::after {
+  position: absolute;
+  content: "+";
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.content-acc{
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.contentbox.active .content-acc {
+  height: 100px;
+  padding: 15px;
+}
+
+.num{
+  color: #008374;
+}
+.frequenly {
+  margin: 30px 0;
+}
 
 
 
 
 
-
-
-/*--------------------------------------------------------------

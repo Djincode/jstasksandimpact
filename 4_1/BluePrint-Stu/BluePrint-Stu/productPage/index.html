@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluprint</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="/index.html">
+            <img src="../assets/images/Logo.png" alt="logo" />
+          </a>
+        </div>
+        <!-- Navigation -->
+        <nav>
+          <ul class="menu__list">
+            <li>
+              <a href="#">
+                Products
+                <span>.</span>
+              </a>
+            </li>
+            <li>
+              <a href="/collections"> Collections<span>.</span> </a>
+            </li>
+            <li>
+              <a href="/account"> Accounts<span>.</span> </a>
+            </li>
+            <li>
+              <a href="/help"> Help<span>.</span> </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Add to Cart and Search -->
+        <div class="header__btns">
+          <a href="/cartPage/index.html">
+            <img src="../assets/icons/cart.svg" alt="cart" />
+          </a>
+          <a href="#">
+            <img src="../assets/icons/search.svg" alt="search" />
+          </a>
+        </div>
+      </header>
+      <!-- Main -->
+      <main class="main">
+        <!-- Product -->
+        <!-- Product Detail -->
+        <div class="product__detail">
+          <h4 id="productCategory" class="product__category">Category</h4>
+          <h1 id="productName" class="product__name">Name</h1>
+          <div class="product__price">
+            <span id="productPrice">89 AZN</span>
+            <img src="../assets/images/Yellow.png" alt="yellow curved line" />
+          </div>
+        </div>
+        <!-- Product Image -->
+        <div class="product__image">
+          <img
+            id="productImage"
+            src="../assets/images/t-shirt.png"
+            alt="t-shirt"
+          />
+        </div>
+        <!-- Product Filter -->
+        <div class="product__filter">
+          <!-- Color -->
+          <div class="product__color">
+            <h3>Product color</h3>
+            <div id="productColor"></div>
+          </div>
+          <!-- Size -->
+          <div class="product__size">
+            <h3>Choose your size</h3>
+            <ul>
+              <li>
+                <button>xs</button>
+              </li>
+              <li>
+                <button>s</button>
+              </li>
+              <li>
+                <button>m</button>
+              </li>
+              <li>
+                <button>l</button>
+              </li>
+              <li>
+                <button>xl</button>
+              </li>
+            </ul>
+          </div>
+          <!-- Counter -->
+          <div class="product__counter">
+            <button>-</button>
+            <input value="1" type="number" min="1" max="100" />
+            <button>+</button>
+          </div>
+          <!-- Add to Cart -->
+          <button class="add-to-cart__btn">
+            Add To Cart
+            <span>
+              <img src="../assets/icons/cart.svg" alt="cart" />
+            </span>
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

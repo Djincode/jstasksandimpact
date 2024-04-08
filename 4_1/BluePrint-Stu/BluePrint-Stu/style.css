@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Variable.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 48px;
+  width: 40px;
+}
+
+.header__logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  gap: 80px;
+}
+
+.menu__list li {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.menu__list li a span {
+  color: #fbbf24;
+}
+
+.header__btns {
+  display: flex;
+  gap: 20px;
+}
+
+.header__btns a {
+  background-color: #1d1d1d;
+  border: 2px solid transparent;
+  transition: all 200ms linear;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.header__btns a:hover {
+  border-color: #fbbf24;
+}
+
+.header__btns a img {
+  display: inline-block;
+  width: 16px;
+}
+
+/* MAIN */
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 80px;
+  margin: 80px 0;
+}
+
+/* FILTERS */
+
+.filters {
+  grid-column: span 3 / span 3;
+}
+
+.categories,
+.colors {
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.filterBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  width: 100%;
+  font-family: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filterBtn span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chevronIcon {
+  transition: all 100ms linear;
+  width: 16px;
+  height: 16px;
+  transform: rotate(-180deg);
+}
+
+.chevronIcon.open {
+  transform: rotate(0deg);
+}
+
+.filterList {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 16px;
+}
+
+.filterList.hidden {
+  display: none !important;
+}
+
+.filterList li {
+  color: #000;
+  cursor: pointer;
+}
+
+.colors .filterList,
+.sizes .filterList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.colors .filterList li {
+  height: 32px;
+  width: 32px;
+  border: 1px solid #e4e7eb;
+  background-color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colors .filterList li span {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+}
+
+.sizes .filterList li {
+  color: #000;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizes .filterList li button {
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+}
+
+/* PRODUCTS */
+.products__container {
+  grid-column: span 9 / span 9;
+}
+
+.products__title {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.products {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.product__item {
+  grid-column: span 4 / span 4;
+  /* cursor: pointer; */
+}
+
+.product__image {
+  margin-bottom: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.product__image img {
+  width: 100%;
+  height: 380px;
+  vertical-align: bottom;
+}
+
+.product__info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.product__description h1 {
+  font-size: 20px;
+}
+
+.product__description p {
+  color: #737373;
+}
+
+.product__price {
+  font-size: 24px;
+}
